@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>'Безумие'</title>
+  <style>
+    body {
+      line-height: 1.6;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      background-color: rgb(255, 232, 232);
+      font-family: sans-serif;
+      font-weight: 500;
+      }
+    header {
+      border-top-width: 10px;
+      border-top-style: solid;
+      border-top-color: rgb(255, 217, 217);
+      border-right-width: 10px;
+      border-right-style: solid;
+      border-right-color: rgb(255, 217, 217);
+      border-bottom-width: 10px;
+      border-bottom-style: solid;
+      border-bottom-color: rgb(255, 217, 217);
+      border-left-width: 10px;
+      border-left-style: solid;
+      border-left-color: rgb(255, 217, 217);
+      background-color: rgb(255, 255, 255);
+      color: rgb(89, 38, 38);
+      text-align: center;
+      font-family: cursive;
+      font-weight: 800;
+      display: block;
+      }
+    section {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      display: block;
+    }
+    footer {
+      color: rgb(201, 164, 164);
+      display: block;
+      margin-top: 20px;
+    }
+    p {
+      color: rgb(128, 50, 50);
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    a {
+      color:rgb(157, 53, 53);
+      font-weight: 1000;
+    }
+    li {
+      color: rgb(86, 33, 33);
+    }
+    q {
+      
+      color:rgb(178, 102, 102);
+      font-family: sans-serif;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.2;
+      color: rgb(86, 33, 33);
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      color: rgb(86, 33, 33);
+      font-weight: 700;
+      margin-top: 15px;
+    }
+    img {
+      max-width: 300px;
+      display: block;
+      margin-left: auto; /* Авто-отступ слева */
+      margin-right: auto;/* Авто-отступ справа */
+      height: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th {
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(41, 12, 12);
+      background-color: rgb(232, 187, 187);
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      color: rgb(86, 33, 33);
+      text-align: center;
+    }
+    td {
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(150, 94, 94);
+      background-color: rgb(255, 228, 228);
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      color: rgb(128, 50, 50);
+      text-align: left;
+    }
+    .dancing {
+      display: block;
+      animation-name: dance;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+    }
+    @keyframes dance {
+      0% {
+        transform: translateY(0) rotate(3deg);
+      }
+      25% {
+        transform: translateY(-5px) rotate(-2deg);
+      }
+      50% {
+        transform: translateY(0) rotate(1deg);
+      }
+      75% {
+        transform: translateY(-3px) rotate(-1deg);
+      }
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+    }
+    .long-text {
+      word-wrap: break-word; 
+      overflow-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Рандом инфа.</h1>
+  </header>
+  <main>
+    <section id="content-review">
+      <h2 class="dancing">Контент</h2>
+      <h3>Подкаст Фрейм Теймера с Ильёй Сатиром</h3>
+      <p class="long-text">Фрейм Теймер задаёт вопросы, как обычно и происходит в подкастах, а Сатир на них отвечает. 
+        Из подкаста зрители подробнее узнают о жизни Ильи Шабельникова. 
+        Он рассказывает о детстве, о своём актёрском пути, а также о своей личной жизни.</p>
+      <video controls src="https://www.youtube.com/watch?v=N3-HSJ6fdsE"></video>
+    </section>
+
+    <section id="priloj2">
+      <h2 class="dancing">Отзыв</h2>
+      <h3>О контенте в приложении 2</h3>
+      <p>Справочник CSS свойств не открылся из -вайбов.)
+      Зато клоунский компендиум реально полезная штука, сохранила себе.Визуальный CSS вообще имба.
+      А ещё забавно, что в справочнике тегов воо вкладке "Как пользоваться справочником" только реклама,</p>
+      <a href = https://htmlbook.ru/css/kak-polzovatsya-spravochnikom>Вот тут</a>
+      <h3>Цитаты</h3>
+      <ul>
+        <li><q>tv - телевизоры.</q></li>
+        <li><q>Radial Gradient Generator</q></li>
+        <li><q>Создаёт обалсть, в которой можно рисовать при помощи js(канвас).</q></li>
+      </ul>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW5-xt0twCF95BIEw38iomFf9e7meb1JEpxw&s"
+      alt="Кот в очках">
+
+    </section>
+
+    <section id="rpl">
+      <table>
+        <caption>
+          <h2 class="dancing" >Расписание матчей (Команда № 14)</h2>
+        </caption>
+        <thead>
+          <tr>
+            <th>Дата</th>
+            <th>Матч</th>
+            <th>Время</th>
+            <th>Счет</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>28 февраля</td>
+            <td>«Локомотив» — «Пари НН»</td>
+            <td>17:00</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>это какое-то розовое безумие.</p>
+  </footer>
+</body>
+</html>
