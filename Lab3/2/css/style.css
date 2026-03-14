@@ -1,0 +1,205 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+}
+main {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+ 
+}
+
+header {
+    grid-column: 1 / -1;
+    background: rgb(255, 242, 0);
+    color: rgb(255, 0, 162);
+    text-align: center;
+    padding: 20px;
+    border: 5px dashed rgb(255, 0, 183);
+}
+.content {
+    padding: 20px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeOlrrVTaDh_FO6To3j6YIpxvH30K7sAijyw&s');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+aside {
+    min-height: 100%; 
+    background-image: url('https://media1.tenor.com/m/tTBpmxEdqJ8AAAAd/%D0%B0%D1%80%D1%82%D1%83%D1%80-%D0%BF%D0%B8%D1%80%D0%BE%D0%B6%D0%BA%D0%BE%D0%B2-%D0%B0%D1%80%D1%82%D1%83%D1%80.gif');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid rgb(255, 0, 132);
+}
+
+footer {
+    grid-column: 1 / -1; 
+    background: rgb(255, 238, 0);
+    border: 5px solid rgb(255, 0, 132);   
+    color: rgb(164, 121, 13);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+.text{
+    color: rgb(255, 0, 0);
+}
+.ads {
+    background-position: center;
+    border: 3px solid rgb(255, 0, 204);       
+}
+article {
+    flex: 1 1 180px;
+    border: 3px solid rgb(255, 0, 204);
+    padding: 10px;
+    text-align: center;
+    background: #f8e9eb;
+}
+
+.vip { 
+    background: rgb(255, 237, 121);
+    border: 10px solid rgb(21, 85, 0);
+    border-style: double;
+}
+
+.blink { 
+    animation: blinker 0.4s infinite; 
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}
+
+@keyframes blinker { 50% { opacity: 0; } }
+
+.slogan {
+    font-size: 1.2rem;
+    color: rgb(255, 0, 204);
+    font-weight: 900;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.button-r {
+    background: rgb(55, 152, 63);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+.button-l {
+    background: rgb(152, 55, 55);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 320px) {
+     body {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        display: none;
+    }
+
+    footer {
+        display: block;
+        order: 99;
+    }
+}
+
+
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 15px;
+    background: #ff00b7;
+    color: white;
+    border: 3px solid #000;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 5px 5px 0px #000;
+}
+
+
+body.dark-theme {
+    background-color: #000;
+    color: #ffffff;
+}
+
+body.dark-theme header, 
+body.dark-theme footer {
+    background: #220033;
+    color: #00ffcc;
+    border-color: #00ffcc;
+}
+
+body.dark-theme .content {
+    background-image: none; 
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7A5GO9YdnHi4KKgi49tmsHKWw2dAfagqMTfSbst2IqvF-PNX1nOFx5698OxU8EBq3iiD2bRxtL9-FEGob2DNg4kY07FqPztZRWRBAkKo&s=10");
+}
+
+body.dark-theme article {
+    background: #333; 
+    color: #fff;
+    border-color: #00ffcc;
+}
+
+body.dark-theme .text, 
+body.dark-theme .slogan {
+    color: #00ffcc;
+}
+
+body.dark-theme .vip {
+    background: #444;
+    border-color: #00ff22;
+}
+
+.reviews-section {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 5px dashed #ff00b7;
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#review-form input, #review-form textarea {
+    padding: 10px;
+    border: 2px solid #ff00b7;
+}
+
+.review-card {
+    border: 2px solid #ff00b7;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgba(255,255,255,0.8);
+    color: #000;
+}
+
+.review-card img {
+    max-width: 150px;
+    display: block;
+    margin-top: 10px;
+}
