@@ -1,0 +1,140 @@
+:root {
+    --rbx-dark: #13061b;
+    --rbx-bg: #6e4b82;
+    --rbx-card: #34213f;
+    --rbx-blue: #00c8ff;
+    --rbx-green: #186321;
+    --rbx-red: #f84d4d;
+    --rbx-orange: #f68802;
+    --rbx-border: #13061b;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--rbx-bg);
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.rbx-header {
+    background-color: var(--rbx-dark);
+    padding: 15px 0;
+    border-bottom: 2px solid #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo { 
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: -1px; 
+}
+
+.api-tag { 
+    background: var(--rbx-blue);
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-left: 5px;
+    color: #000;
+    font-weight: 900; 
+}
+
+nav a {
+    color: #bdbebe;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+nav a.active { 
+    color: var(--rbx-blue);
+    border-bottom: 2px solid var(--rbx-blue);
+    padding-bottom: 5px; 
+}
+
+main { 
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px; 
+}
+
+.card {
+    background: var(--rbx-card);
+    border: 1px solid var(--rbx-border);
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.4s ease;
+}
+
+h2 { 
+    border-left: 4px solid var(--rbx-blue);
+    padding-left: 15px;
+    margin-bottom: 25px; 
+}
+
+input {
+    background: #121314;
+    border: 1px solid var(--rbx-border);
+    color: white;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.btn-group { 
+    display: flex;
+    gap: 10px;
+    margin-top: 15px; 
+}
+
+button {
+    background: #555;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+button.primary { 
+    background: var(--rbx-green); 
+}
+
+button.patch { 
+    background: var(--rbx-orange); 
+}
+
+button.delete { 
+    background: var(--rbx-red); 
+}
+
+button:hover { 
+    filter: brightness(1.2); 
+}
+
+.loading { 
+    color: var(--rbx-blue); 
+    font-weight: bold; 
+    text-align: center; 
+    margin-top: 50px; 
+}
